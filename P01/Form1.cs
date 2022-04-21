@@ -16,5 +16,21 @@ namespace P01
         {
             InitializeComponent();
         }
+
+        static private int SoucetArPosl(int a,int b,int n,out int difference,out int posledniPrvek)
+        {
+            difference = b - a;
+            posledniPrvek = a + (n - 1) * difference;
+            int soucet = (a + posledniPrvek) / 2 * n;
+            return soucet;
+        }
+        private void buttonExecute_Click(object sender, EventArgs e)
+        {
+            int a1 = Convert.ToInt32(textBoxA.Text);
+            int a2 = Convert.ToInt32(textBoxB.Text);
+            int n = Convert.ToInt32(textBoxN.Text);
+            int soucet = SoucetArPosl(a1, a2, n, out int rozdil, out int posledni);
+            labelVysledek.Text = string.Format("Výsledek:\nPoslední prvek je {0}\nrozdíl je {1}\nSoučet je {2}", posledni, rozdil, soucet);
+        }
     }
 }
