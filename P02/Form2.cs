@@ -47,17 +47,42 @@ namespace P02
             }
         }
 
+        static private bool Rostouci(int[] pole)
+        {
+            bool roste = true;
+            for (int i = 1; i < pole.Length; i++)
+            {
+                if (pole[i] < pole[i - 1]) roste = false;
+            }
+            return roste;
+        }
+
+        static private void Vymena(int[] pole, ListBox ctrl)
+        {
+            ctrl.Items.Clear();
+            int indexoflast = Array.IndexOf(pole, pole.Max());
+            (pole[pole.Length - 1], pole[indexoflast]) = (pole[indexoflast], pole[pole.Length - 1]);
+            foreach(int value in pole)
+            {
+                ctrl.Items.Add(value);
+            }
+        }
+
         private void buttonExecute_Click(object sender, EventArgs e)
         {
+            listBox1.Items.Clear();
             int a = 1, b = 100;
             if (textBox1.Text != string.Empty) a = Convert.ToInt32(textBox1.Text);
             if (textBox2.Text != string.Empty) b = Convert.ToInt32(textBox2.Text);
             int n = Convert.ToInt32(textBoxN.Text);
             ListBox ctrl = listBox1;
+            ListBox ctrl2 = listBox2;
             int[] pole = Generace(n, a, b);
+            bool rost = Rostouci(pole);
             Vypsani(pole, ctrl);
+            Vymena(pole, ctrl2);
             SudLich(pole, out int sud, out int lich);
-            labelSudLich.Text = string.Format("Sudých: {0}\nLichých: {1}", sud, lich);
+            labelSudLich.Text = string.Format("Sudých: {0}\nLichých: {1}\nRostoucí: {2}", sud, lich, rost ? "ano" : "ne");
         }
     }
 }
