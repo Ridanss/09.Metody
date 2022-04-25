@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Library</name>
+    </assembly>
+    <members>
+        <member name="M:ClassLibrary1.Library.SoucetArPosl(System.Int32,System.Int32,System.Int32,System.Int32@,System.Int32@)">
+            <summary>
+            Součet arit. posloupnosti
+            </summary>
+            <param name="a">prnví prvek</param>
+            <param name="b">druhý prvek</param>
+            <param name="n">počet prvků</param>
+            <param name="difference">rozdíl mezi prvky</param>
+            <param name="posledniPrvek">poslední prvek v posloupnosti</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
