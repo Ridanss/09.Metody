@@ -44,7 +44,7 @@ namespace P02
             foreach(int value in pole)
             {
                 if (value % 2 == 0) sudych += value;
-                else lichych += value;
+                else lichych++ ;
             }
         }
 
@@ -68,35 +68,49 @@ namespace P02
             listBox1.Items.Clear();
             int a, b;
             int n = Convert.ToInt32(textBoxN.Text);
-            int[] pole = Generace(n);
+            int[] pole;
             if (textBox1.Text != string.Empty)
             {
                 a = Convert.ToInt32(textBox1.Text);
-                pole = Generace(n, a);
                 if (textBox2.Text != string.Empty)
                 {
                     b = Convert.ToInt32(textBox2.Text);
                     pole = Generace(n, a, b);
                 }
+                else pole = Generace(n, a);
+                bool rost = Rostouci(pole);
+                Vypsani(pole, listBox1);
+                Vymena(pole);
+                Vypsani(pole, listBox2);
+                SudLich(pole, out int sud, out int lich);
+                labelSudLich.Text = string.Format("Součet sudých: {0}\nSoučet lichých: {1}\nRostoucí: {2}", sud, lich, rost ? "ano" : "ne");
             }
             if (textBox2.Text != string.Empty)
             {
                 b = Convert.ToInt32(textBox2.Text);
-                pole = Generace(n, b: b);
                 if (textBox1.Text != string.Empty)
                 {
                     a = Convert.ToInt32(textBox1.Text);
                     pole = Generace(n, a, b);
                 }
+                else pole = Generace(n, b: b);
+                bool rost = Rostouci(pole);
+                Vypsani(pole, listBox1);
+                Vymena(pole);
+                Vypsani(pole, listBox2);
+                SudLich(pole, out int sud, out int lich);
+                labelSudLich.Text = string.Format("Součet sudých: {0}\nSoučet lichých: {1}\nRostoucí: {2}", sud, lich, rost ? "ano" : "ne");
             }
-            ListBox ctrl1 = listBox1;
-            ListBox ctrl2 = listBox2;
-            bool rost = Rostouci(pole);
-            Vypsani(pole, ctrl1);
-            Vymena(pole);
-            Vypsani(pole, ctrl2);
-            SudLich(pole, out int sud, out int lich);
-            labelSudLich.Text = string.Format("Součet sudých: {0}\nSoučet lichých: {1}\nRostoucí: {2}", sud, lich, rost ? "ano" : "ne");
+            if (textBox2.Text == string.Empty && textBox1.Text == string.Empty)
+            {
+                pole = Generace(n);
+                bool rost = Rostouci(pole);
+                Vypsani(pole, listBox1);
+                Vymena(pole);
+                Vypsani(pole, listBox2);
+                SudLich(pole, out int sud, out int lich);
+                labelSudLich.Text = string.Format("Součet sudých: {0}\nSoučet lichých: {1}\nRostoucí: {2}", sud, lich, rost ? "ano" : "ne");
+            }
         }
     }
 }
