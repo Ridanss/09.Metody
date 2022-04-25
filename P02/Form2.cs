@@ -85,7 +85,7 @@ namespace P02
                 SudLich(pole, out int sud, out int lich);
                 labelSudLich.Text = string.Format("Součet sudých: {0}\nSoučet lichých: {1}\nRostoucí: {2}", sud, lich, rost ? "ano" : "ne");
             }
-            if (textBox2.Text != string.Empty)
+            else if (textBox2.Text != string.Empty)
             {
                 b = Convert.ToInt32(textBox2.Text);
                 if (textBox1.Text != string.Empty)
@@ -101,7 +101,7 @@ namespace P02
                 SudLich(pole, out int sud, out int lich);
                 labelSudLich.Text = string.Format("Součet sudých: {0}\nSoučet lichých: {1}\nRostoucí: {2}", sud, lich, rost ? "ano" : "ne");
             }
-            if (textBox2.Text == string.Empty && textBox1.Text == string.Empty)
+            else
             {
                 pole = Generace(n);
                 bool rost = Rostouci(pole);
