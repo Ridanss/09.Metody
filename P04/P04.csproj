@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9D3D2AFA-1353-48C8-8FFF-C523123B79D8}</ProjectGuid>
+    <ProjectGuid>{9F6A020A-BF60-4E2B-97CB-BA491690B222}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>P02</RootNamespace>
-    <AssemblyName>P02</AssemblyName>
+    <RootNamespace>P04</RootNamespace>
+    <AssemblyName>P04</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form2.cs">
+    <Compile Include="Form4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program2.cs" />
+    <Compile Include="Program4.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,6 +80,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MatematikaUtil\MatematikaUtil.csproj">
+      <Project>{C8023EE2-7737-4206-8208-A220BE07F76F}</Project>
+      <Name>MatematikaUtil</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PoleUtil\PoleUtil.csproj">
       <Project>{C983C200-ECDF-4D06-BEDC-46117959A1DF}</Project>
       <Name>PoleUtil</Name>

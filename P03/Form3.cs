@@ -18,36 +18,19 @@ namespace P03
             InitializeComponent();
         }
 
-        static public void CtverecKrychle(int a, out int obsah, out double uhlopricka)
-        {
-            obsah = a * a;
-            uhlopricka = a * Math.Sqrt(2);
-        }
-
-        static public void CtverecKrychle(int a, int b, out int obsah, out double uhlopricka)
-        {
-            obsah = a * b;
-            uhlopricka = Math.Sqrt(a * a + b * b);
-        }
-
-        static public void KrychleKvadr(int a, out int objem, out double telesuhlopricka)
-        {
-            objem = a * a * a;
-            telesuhlopricka = a * Math.Sqrt(3);
-        }
-
-        static public void KrychleKvadr(int a, int b, int c, out int objem, out double telesuhlopricka)
-        {
-            objem = a * b * c;
-            telesuhlopricka = Math.Sqrt(a * a + b * b + c * c); 
-        }
         private void buttonExecute_Click(object sender, EventArgs e)
         {
             int a = Convert.ToInt32(textBox1.Text);
             int b = Convert.ToInt32(textBox2.Text);
             int c = Convert.ToInt32(textBox3.Text);
-            CtverecKrychle(a, out int S, out double u);
-            labelCtverec.Text = string.Format("čtverec:\nObsah: {0}\nUhlopříčka: {1}");
+            Library.CtverecObdelnik(a, out int ctvS, out double ctvu);
+            Library.CtverecObdelnik(a, b, out int obdS, out double obdu);
+            Library.KrychleKvadr(a, out int kryV, out double kryu);
+            Library.KrychleKvadr(a, b, c, out int kvaV, out double kvau);
+            labelCtverec.Text = string.Format("čtverec:\nObsah: {0:F3} cm2\nÚhlopříčka: {1:F3} cm", ctvS, ctvu);
+            labelObdelnik.Text = string.Format("obdélník:\nObsah: {0:F3} cm2\nÚhlopříčka: {1:F3} cm", obdS, obdu);
+            labelKrychle.Text = string.Format("krychle:\nObjem: {0:F3} cm3\nTělesová úhlopříčka: {1:F3} cm", kryV, kryu);
+            labelKvadr.Text = string.Format("kvádr:\nObjem: {0:F3} cm3\nTělesová úhlopříčka: {1:F3} cm", kvaV, kvau);
         }
     }
 }

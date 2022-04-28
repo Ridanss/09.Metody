@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PoleUtil</name>
+    </assembly>
+    <members>
+        <member name="T:PoleUtil.Pole">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PoleUtil.Pole.Generace(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            generace pole náhodných čísel
+            </summary>
+            <param name="n">počet prvků</param>
+            <param name="a">spodní hranice</param>
+            <param name="b">horní hranice</param>
+            <returns>vygenerované pole</returns>
+        </member>
+        <member name="M:PoleUtil.Pole.Vypsani(System.Int32[],System.Windows.Forms.ListBox)">
+            <summary>
+            vypisuje pole do listboxu
+            </summary>
+            <param name="pole">vypisované pole</param>
+            <param name="listbox">listbox do kterého vypisujeme</param>
+        </member>
+        <member name="M:PoleUtil.Pole.SudLich(System.Int32[],System.Int32@,System.Int32@)">
+            <summary>
+            součet sudých a počet lichých prvků v poli
+            </summary>
+            <param name="pole">Pole s kterým pracujeme</param>
+            <param name="sudych">součet sudých</param>
+            <param name="lichych">počet lichých</param>
+        </member>
+        <member name="M:PoleUtil.Pole.Rostouci(System.Int32[])">
+            <summary>
+            Určí zda je pole rostoucí
+            </summary>
+            <param name="pole">kontrolované pole</param>
+            <returns>bool jestli je rostouci/nerostouci</returns>
+        </member>
+        <member name="M:PoleUtil.Pole.Vymena(System.Int32[])">
+            <summary>
+            Vymění nejvetší prvek v poli s posledním prvkem</summary>
+            <param name="pole">Zadávané pole</param>
+        </member>
+        <member name="M:PoleUtil.Pole.UpravitPole(System.Int32[])">
+            <summary>
+            Vynuluje zaporne prvky a nahradi kladne prvky mocninou
+            </summary>
+            <param name="pole">zadavane pole</param>
+            <returns>vraci upravene pole</returns>
+        </member>
+    </members>
+</doc>

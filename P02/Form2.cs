@@ -1,4 +1,4 @@
-﻿using ClassLibrary1;
+﻿using PoleUtil;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,14 +29,14 @@ namespace P02
                 if (textBox2.Text != string.Empty)
                 {
                     b = Convert.ToInt32(textBox2.Text);
-                    pole = Library.Generace(n, a, b);
+                    pole = Pole.Generace(n, a, b);
                 }
-                else pole = Library.Generace(n, a);
-                bool rost = Library.Rostouci(pole);
-                Library.Vypsani(pole, listBox1);
-                Library.Vymena(pole);
-                Library.Vypsani(pole, listBox2);
-                Library.SudLich(pole, out int sud, out int lich);
+                else pole = Pole.Generace(n, a);
+                bool rost = Pole.Rostouci(pole);
+                Pole.Vypsani(pole, listBox1);
+                Pole.Vymena(pole);
+                Pole.Vypsani(pole, listBox2);
+                Pole.SudLich(pole, out int sud, out int lich);
                 labelSudLich.Text = string.Format("Součet sudých: {0}\nPočet lichých: {1}\nRostoucí: {2}", sud, lich, rost ? "ano" : "ne");
             }
             else if (textBox2.Text != string.Empty)
@@ -45,24 +45,24 @@ namespace P02
                 if (textBox1.Text != string.Empty)
                 {
                     a = Convert.ToInt32(textBox1.Text);
-                    pole = Library.Generace(n, a, b);
+                    pole = Pole.Generace(n, a, b);
                 }
-                else pole = Library.Generace(n, b: b);
-                bool rost = Library.Rostouci(pole);
-                Library.Vypsani(pole, listBox1);
-                Library.Vymena(pole);
-                Library.Vypsani(pole, listBox2);
-                Library.SudLich(pole, out int sud, out int lich);
+                else pole = Pole.Generace(n, b: b);
+                bool rost = Pole.Rostouci(pole);
+                Pole.Vypsani(pole, listBox1);
+                Pole.Vymena(pole);
+                Pole.Vypsani(pole, listBox2);
+                Pole.SudLich(pole, out int sud, out int lich);
                 labelSudLich.Text = string.Format("Součet sudých: {0}\nSoučet lichých: {1}\nRostoucí: {2}", sud, lich, rost ? "ano" : "ne");
             }
             else
             {
-                pole = Library.Generace(n);
-                bool rost = Library.Rostouci(pole);
-                Library.Vypsani(pole, listBox1);
-                Library.Vymena(pole);
-                Library.Vypsani(pole, listBox2);
-                Library.SudLich(pole, out int sud, out int lich);
+                pole = Pole.Generace(n);
+                bool rost = Pole.Rostouci(pole);
+                Pole.Vypsani(pole, listBox1);
+                Pole.Vymena(pole);
+                Pole.Vypsani(pole, listBox2);
+                Pole.SudLich(pole, out int sud, out int lich);
                 labelSudLich.Text = string.Format("Součet sudých: {0}\nSoučet lichých: {1}\nRostoucí: {2}", sud, lich, rost ? "ano" : "ne");
             }
         }

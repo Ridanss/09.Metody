@@ -9,7 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02", "P02\P02.csproj", "{9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03", "P03\P03.csproj", "{19E15792-3AAE-438F-8979-A6FC3981774E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "ClassLibrary1\Library.csproj", "{8688B7E2-946D-46BD-A378-E38BA0600801}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library", "ClassLibrary1\Library.csproj", "{8688B7E2-946D-46BD-A378-E38BA0600801}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoleUtil", "PoleUtil\PoleUtil.csproj", "{C983C200-ECDF-4D06-BEDC-46117959A1DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04", "P04\P04.csproj", "{9F6A020A-BF60-4E2B-97CB-BA491690B222}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatematikaUtil", "MatematikaUtil\MatematikaUtil.csproj", "{C8023EE2-7737-4206-8208-A220BE07F76F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{8688B7E2-946D-46BD-A378-E38BA0600801}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8688B7E2-946D-46BD-A378-E38BA0600801}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8688B7E2-946D-46BD-A378-E38BA0600801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C983C200-ECDF-4D06-BEDC-46117959A1DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C983C200-ECDF-4D06-BEDC-46117959A1DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C983C200-ECDF-4D06-BEDC-46117959A1DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C983C200-ECDF-4D06-BEDC-46117959A1DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F6A020A-BF60-4E2B-97CB-BA491690B222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F6A020A-BF60-4E2B-97CB-BA491690B222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F6A020A-BF60-4E2B-97CB-BA491690B222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F6A020A-BF60-4E2B-97CB-BA491690B222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8023EE2-7737-4206-8208-A220BE07F76F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8023EE2-7737-4206-8208-A220BE07F76F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8023EE2-7737-4206-8208-A220BE07F76F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8023EE2-7737-4206-8208-A220BE07F76F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

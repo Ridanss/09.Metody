@@ -106,7 +106,7 @@
             // labelObdelnik
             // 
             this.labelObdelnik.AutoSize = true;
-            this.labelObdelnik.Location = new System.Drawing.Point(168, 146);
+            this.labelObdelnik.Location = new System.Drawing.Point(209, 146);
             this.labelObdelnik.Name = "labelObdelnik";
             this.labelObdelnik.Size = new System.Drawing.Size(52, 13);
             this.labelObdelnik.TabIndex = 7;
@@ -115,7 +115,7 @@
             // labelKvadr
             // 
             this.labelKvadr.AutoSize = true;
-            this.labelKvadr.Location = new System.Drawing.Point(168, 232);
+            this.labelKvadr.Location = new System.Drawing.Point(209, 232);
             this.labelKvadr.Name = "labelKvadr";
             this.labelKvadr.Size = new System.Drawing.Size(37, 13);
             this.labelKvadr.TabIndex = 8;
@@ -142,7 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(441, 338);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.labelKvadr);
