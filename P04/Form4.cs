@@ -1,4 +1,5 @@
-﻿using PoleUtil;
+﻿using ClassLibrary1;
+using PoleUtil;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,13 +23,7 @@ namespace P04
         {
             int n = Convert.ToInt32(textBox1.Text);
             int x = Convert.ToInt32(textBox2.Text);
-            int[] pole = new int[n];
-            Random rnd = new Random();  
-            for (int i = 0; i < n; i++)
-            {
-                pole[i] = rnd.Next(-100, 101);
-                listBox1.Items.Add(pole[i]);
-            }
+            int[] pole = Library.Generace(n, -100, 101);
             pole = Pole.UpravitPole(pole, x);
             foreach(int value in pole)
             {

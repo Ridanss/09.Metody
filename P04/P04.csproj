@@ -80,6 +80,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\Library.csproj">
+      <Project>{8688B7E2-946D-46BD-A378-E38BA0600801}</Project>
+      <Name>Library</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MatematikaUtil\MatematikaUtil.csproj">
       <Project>{C8023EE2-7737-4206-8208-A220BE07F76F}</Project>
       <Name>MatematikaUtil</Name>
