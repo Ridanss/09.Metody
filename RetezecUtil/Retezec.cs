@@ -30,5 +30,11 @@ namespace RetezecUtil
             }
             return cifra;
         }
+
+        static public bool ObsahujeSlovo(string chain)
+        {
+            string[] pole = chain.Split(' ');
+
+        }
     }
 }

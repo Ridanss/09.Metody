@@ -22,7 +22,11 @@ namespace MatematikaUtil
             }
             return prvek;
         }
-        
+        /// <summary>
+        /// zjisti zda je prvek prvocislo
+        /// </summary>
+        /// <param name="prvek">kontrolovany prvek</param>
+        /// <returns></returns>
         static public bool Prvocislo(int prvek)
         {
             if (prvek == 1 || prvek > 2 && prvek % 2 == 0) return false;
