@@ -45,7 +45,7 @@
             Vymění nejvetší prvek v poli s posledním prvkem</summary>
             <param name="pole">Zadávané pole</param>
         </member>
-        <member name="M:PoleUtil.Pole.UpravitPole(System.Int32[])">
+        <member name="M:PoleUtil.Pole.UpravitPole(System.Int32[],System.Int32)">
             <summary>
             Vynuluje zaporne prvky a nahradi kladne prvky mocninou
             </summary>

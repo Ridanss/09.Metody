@@ -82,14 +82,14 @@ namespace PoleUtil
         /// </summary>
         /// <param name="pole">zadavane pole</param>
         /// <returns>vraci upravene pole</returns>
-        static public int[] UpravitPole(int[] pole)
+        static public int[] UpravitPole(int[] pole, int x)
         {
             for (int i = 0; i < pole.Length; i++)
             {
-                if (pole[i] < 0) pole[i] = 0;
+                if (pole[i] <= 0) pole[i] = 0;
                 else
                 {
-                    pole[i] = Matika.DruhaMocnina(pole[i]);
+                    pole[i] = Matika.Mocnina(pole[i], x);
                 }
             }
             return pole;

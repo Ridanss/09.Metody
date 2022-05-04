@@ -29,7 +29,7 @@ namespace P04
                 pole[i] = rnd.Next(-100, 101);
                 listBox1.Items.Add(pole[i]);
             }
-            pole = Pole.UpravitPole(pole);
+            pole = Pole.UpravitPole(pole, x);
             foreach(int value in pole)
             {
                 listBox2.Items.Add(value);

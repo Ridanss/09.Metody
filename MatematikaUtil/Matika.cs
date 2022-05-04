@@ -7,9 +7,20 @@ namespace MatematikaUtil
     /// </summary>
     public class Matika
     {
-        static public int DruhaMocnina(int x)
+        /// <summary>
+        /// vrátí xtou mocninu prvku
+        /// </summary>
+        /// <param name="prvek">umocnovane cislo</param>
+        /// <param name="mocnina">mocnina</param>
+        /// <returns></returns>
+        static public int Mocnina(int prvek, int mocnina)
         {
-            return x = x * x;
+            int puvodni = prvek;
+            for (int i = 1; i < mocnina; i++)
+            {
+                prvek = prvek * puvodni;
+            }
+            return prvek;
         }
     }
 }
