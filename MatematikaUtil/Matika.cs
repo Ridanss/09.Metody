@@ -15,10 +15,10 @@ namespace MatematikaUtil
         /// <returns></returns>
         static public int Mocnina(int prvek, int mocnina)
         {
-            int puvodni = prvek;
-            for (int i = 1; i < mocnina; i++)
+            int vysledek = 1;
+            for (int i = 0; i < mocnina; i++)
             {
-                prvek *= puvodni;
+                vysledek *= prvek;
             }
             return prvek;
         }

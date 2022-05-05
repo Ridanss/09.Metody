@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 
 namespace RetezecUtil
 {
@@ -30,11 +30,30 @@ namespace RetezecUtil
             }
             return cifra;
         }
-
-        static public bool ObsahujeSlovo(string chain)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="nejdelsi"></param>
+        /// <param name="nejkratsi"></param>
+        /// <param name="chain"></param>
+        /// <returns></returns>
+        static public bool ObsahujeSlovo(out string nejdelsi, out string nejkratsi, string chain)
         {
-            string[] pole = chain.Split(' ');
-
+            chain.Trim();
+            string[] slova = chain.Split(' ');
+            nejdelsi = string.Empty;
+            nejkratsi = slova[0];
+            bool obsahuje = false;
+            foreach (string slovo in slova)
+            {
+                if (slovo != " ")
+                {
+                    obsahuje = true;
+                    if (slovo.Length > nejdelsi.Length) nejdelsi = slovo;
+                    else if (slovo.Length < nejkratsi.Length) nejkratsi = slovo;
+                }
+            }
+            return obsahuje;
         }
     }
 }

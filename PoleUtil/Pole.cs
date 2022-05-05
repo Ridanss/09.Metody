@@ -78,11 +78,12 @@ namespace PoleUtil
             (pole[pole.Length - 1], pole[indexoflast]) = (pole[indexoflast], pole[pole.Length - 1]);
         }
         /// <summary>
-        /// Vynuluje zaporne prvky a nahradi kladne prvky mocninou
+        /// 
         /// </summary>
-        /// <param name="pole">zadavane pole</param>
-        /// <returns>vraci upravene pole</returns>
-        static public int[] UpravitPole(int[] pole, int x)
+        /// <param name="pole"> pole </param>
+        /// <param name="x"> mocnina </param>
+        /// <returns></returns>
+        static public int[] UpravitPole(int[] pole, int x = 1)
         {
             for (int i = 0; i < pole.Length; i++)
             {

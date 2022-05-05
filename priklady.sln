@@ -19,9 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MatematikaUtil", "Matematik
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05", "P05\P05.csproj", "{2D0ECC18-BF8C-4E42-82BD-F2B59F6FCB86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetezecUtil", "RetezecUtil\RetezecUtil.csproj", "{AE04FDD3-267F-4605-AA29-578131BCB6F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RetezecUtil", "RetezecUtil\RetezecUtil.csproj", "{AE04FDD3-267F-4605-AA29-578131BCB6F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06", "P06\P06.csproj", "{2DDD4658-5F5D-4287-984A-7A053068F99F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06", "P06\P06.csproj", "{BD504BAC-A288-4DDE-ACF8-4F7F9FA483BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,10 +65,10 @@ Global
 		{AE04FDD3-267F-4605-AA29-578131BCB6F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE04FDD3-267F-4605-AA29-578131BCB6F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE04FDD3-267F-4605-AA29-578131BCB6F1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2DDD4658-5F5D-4287-984A-7A053068F99F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2DDD4658-5F5D-4287-984A-7A053068F99F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2DDD4658-5F5D-4287-984A-7A053068F99F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2DDD4658-5F5D-4287-984A-7A053068F99F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD504BAC-A288-4DDE-ACF8-4F7F9FA483BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD504BAC-A288-4DDE-ACF8-4F7F9FA483BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD504BAC-A288-4DDE-ACF8-4F7F9FA483BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD504BAC-A288-4DDE-ACF8-4F7F9FA483BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

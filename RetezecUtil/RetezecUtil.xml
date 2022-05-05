@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RetezecUtil</name>
+    </assembly>
+    <members>
+        <member name="T:RetezecUtil.Retezec">
+            <summary>
+            Metody pro praci s retezci
+            </summary>
+        </member>
+        <member name="M:RetezecUtil.Retezec.ObsahujeCifru(System.String,System.Int32@,System.Int32@)">
+            <summary>
+            
+            </summary>
+            <param name="chain"></param>
+            <param name="pocetCifer"></param>
+            <param name="soucetLichychCifer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RetezecUtil.Retezec.ObsahujeSlovo(System.String@,System.String@,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="nejdelsi"></param>
+            <param name="nejkratsi"></param>
+            <param name="chain"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
