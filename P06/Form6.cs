@@ -20,11 +20,11 @@ namespace P06
 
         private void buttonExecute_Click(object sender, EventArgs e)
         {
-            label1.Text = "Výsledky:\n";
             if (textBox1.Text != string.Empty)
             {
+                label1.Text = "Výsledky:\n";
                 bool slovo = Retezec.ObsahujeSlovo(out string nejdelsi, out string nejkratsi, textBox1.Text);
-                label1.Text += string.Format("\n{0} slovo\nNejdelší slovo je {1}\nNejkratší slovo je {2}\n", slovo ? "Obsahuje" : "Neobsahuje", nejdelsi, nejkratsi);
+                label1.Text += string.Format("{0} slovo\nNejdelší slovo je {1}\nNejkratší slovo je {2}\n", slovo ? "Obsahuje" : "Neobsahuje", nejdelsi, nejkratsi);
             }
         }
     }

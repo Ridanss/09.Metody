@@ -39,14 +39,14 @@ namespace RetezecUtil
         /// <returns></returns>
         static public bool ObsahujeSlovo(out string nejdelsi, out string nejkratsi, string chain)
         {
-            chain.Trim();
+            chain = chain.Trim();
             string[] slova = chain.Split(' ');
             nejdelsi = string.Empty;
             nejkratsi = slova[0];
             bool obsahuje = false;
             foreach (string slovo in slova)
             {
-                if (slovo != " ")
+                if (slovo != string.Empty)
                 {
                     obsahuje = true;
                     if (slovo.Length > nejdelsi.Length) nejdelsi = slovo;
