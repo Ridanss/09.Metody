@@ -82,6 +82,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PoleUtil\PoleUtil.csproj">
+      <Project>{C983C200-ECDF-4D06-BEDC-46117959A1DF}</Project>
+      <Name>PoleUtil</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RetezecUtil\RetezecUtil.csproj">
       <Project>{AE04FDD3-267F-4605-AA29-578131BCB6F1}</Project>
       <Name>RetezecUtil</Name>

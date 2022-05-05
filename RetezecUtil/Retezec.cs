@@ -37,20 +37,25 @@ namespace RetezecUtil
         /// <param name="nejkratsi"></param>
         /// <param name="chain"></param>
         /// <returns></returns>
-        static public bool ObsahujeSlovo(out string nejdelsi, out string nejkratsi, string chain)
+        static public bool ObsahujeSlovo(out string nejdelsi, out string nejkratsi, out string[] slova, string chain)
         {
             chain = chain.Trim();
-            string[] slova = chain.Split(' ');
+            while (chain.Contains("  "))
+            {
+                chain.Replace("  ", " ");
+            }
+            slova = chain.Split(' ');
+
             nejdelsi = string.Empty;
             nejkratsi = slova[0];
             bool obsahuje = false;
-            foreach (string slovo in slova)
+            for (int i = 0; i < slova.Length; i++)
             {
-                if (slovo != string.Empty)
+                if (slova[i] != string.Empty)
                 {
                     obsahuje = true;
-                    if (slovo.Length > nejdelsi.Length) nejdelsi = slovo;
-                    else if (slovo.Length < nejkratsi.Length) nejkratsi = slovo;
+                    if (slova[i].Length > nejdelsi.Length) nejdelsi = slova[i];
+                    else if (slova[i].Length < nejkratsi.Length) nejkratsi = slova[i];
                 }
             }
             return obsahuje;
