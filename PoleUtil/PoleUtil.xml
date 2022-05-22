@@ -47,10 +47,11 @@
         </member>
         <member name="M:PoleUtil.Pole.UpravitPole(System.Int32[],System.Int32)">
             <summary>
-            Vynuluje zaporne prvky a nahradi kladne prvky mocninou
+            
             </summary>
-            <param name="pole">zadavane pole</param>
-            <returns>vraci upravene pole</returns>
+            <param name="pole"> pole </param>
+            <param name="x"> mocnina </param>
+            <returns></returns>
         </member>
     </members>
 </doc>

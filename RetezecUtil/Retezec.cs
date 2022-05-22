@@ -30,19 +30,20 @@ namespace RetezecUtil
             }
             return cifra;
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="nejdelsi"></param>
-        /// <param name="nejkratsi"></param>
-        /// <param name="chain"></param>
-        /// <returns></returns>
+/// <summary>
+/// 
+/// </summary>
+/// <param name="nejdelsi"></param>
+/// <param name="nejkratsi"></param>
+/// <param name="slova"></param>
+/// <param name="chain"></param>
+/// <returns></returns>
         static public bool ObsahujeSlovo(out string nejdelsi, out string nejkratsi, out string[] slova, string chain)
         {
             chain = chain.Trim();
             while (chain.Contains("  "))
             {
-                chain.Replace("  ", " ");
+                chain = chain.Replace("  ", " ");
             }
             slova = chain.Split(' ');
 
@@ -59,6 +60,45 @@ namespace RetezecUtil
                 }
             }
             return obsahuje;
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="slovo">vstup</param>
+        /// <param name="male_pismena">pocet malych pismen</param>
+        /// <param name="cifry">pocet cifer</param>
+        /// <param name="jine_znaky">pocet jinych znaku</param>
+        /// <returns></returns>
+        static public bool JeAlfanum(string slovo, out int male_pismena, out int cifry, out int jine_znaky)
+        {
+            male_pismena = 0;
+            cifry = 0;
+            jine_znaky = 0;
+            int projelo = 0;
+            for (int i = 0; i < slovo.Length; i++)
+            {
+                if (slovo[i] >= 'a' && slovo[i] <= 'z')
+                {
+                    male_pismena++;
+                }
+                else if (slovo[i] >= '0' && slovo[i] <= '9')
+                {
+                    cifry++;
+                }
+                else if (slovo[i] != ' ')
+                {
+                    jine_znaky++;
+                }
+                projelo = 1;
+            }
+            if (projelo != 0 && jine_znaky == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

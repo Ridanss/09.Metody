@@ -36,9 +36,10 @@
             // 
             // buttonExecute
             // 
-            this.buttonExecute.Location = new System.Drawing.Point(276, 42);
+            this.buttonExecute.Location = new System.Drawing.Point(368, 52);
+            this.buttonExecute.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonExecute.Name = "buttonExecute";
-            this.buttonExecute.Size = new System.Drawing.Size(75, 23);
+            this.buttonExecute.Size = new System.Drawing.Size(100, 28);
             this.buttonExecute.TabIndex = 0;
             this.buttonExecute.Text = "zadat";
             this.buttonExecute.UseVisualStyleBackColor = true;
@@ -46,38 +47,43 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(33, 44);
+            this.textBox1.Location = new System.Drawing.Point(44, 54);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(237, 20);
+            this.textBox1.Size = new System.Drawing.Size(315, 22);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "  a  sdfsd   sdf 54 6";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 82);
+            this.label1.Location = new System.Drawing.Point(40, 101);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.Size = new System.Drawing.Size(66, 16);
             this.label1.TabIndex = 2;
             this.label1.Text = "Výsledky:";
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(110, 82);
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(238, 101);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 147);
+            this.listBox1.Size = new System.Drawing.Size(159, 180);
             this.listBox1.TabIndex = 3;
             // 
             // Form6
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.buttonExecute);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form6";
             this.Text = "Form1";
             this.ResumeLayout(false);
