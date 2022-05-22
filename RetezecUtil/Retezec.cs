@@ -1,4 +1,5 @@
 ﻿    using System;
+using System.Windows.Forms;
 
 namespace RetezecUtil
 {
@@ -99,6 +100,37 @@ namespace RetezecUtil
             {
                 return false;
             }
+        }
+        /// <summary>
+        /// vypise string[] do textboxu
+        /// </summary>
+        /// <param name="chain">vstup</param>
+        /// <param name="ctrl">vystup</param>
+        static public void Zobraz(string[] chain, TextBox ctrl)
+        {
+            foreach(string value in chain)
+            {
+                ctrl.Text += value;
+                ctrl.Text += Environment.NewLine;
+            }
+        }
+        /// <summary>
+        /// Smaze cifry
+        /// </summary>
+        /// <param name="chain">vstup</param>
+        /// <returns></returns>
+        static public string Smaz(string chain)
+        {
+            int i = 0;
+            while (i < chain.Length)
+            {
+                if (char.IsDigit(chain[i]))
+                {
+                    chain = chain.Remove(i, 1);
+                }
+                else i++;
+            }
+            return chain;
         }
     }
 }

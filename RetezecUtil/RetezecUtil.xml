@@ -38,5 +38,19 @@
             <param name="jine_znaky">pocet jinych znaku</param>
             <returns></returns>
         </member>
+        <member name="M:RetezecUtil.Retezec.Zobraz(System.String[],System.Windows.Forms.TextBox)">
+            <summary>
+            vypise string[] do textboxu
+            </summary>
+            <param name="chain">vstup</param>
+            <param name="ctrl">vystup</param>
+        </member>
+        <member name="M:RetezecUtil.Retezec.Smaz(System.String)">
+            <summary>
+            Smaze cifry
+            </summary>
+            <param name="chain">vstup</param>
+            <returns></returns>
+        </member>
     </members>
 </doc>
