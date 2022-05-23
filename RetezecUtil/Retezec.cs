@@ -72,34 +72,35 @@ namespace RetezecUtil
         /// <returns></returns>
         static public bool JeAlfanum(string slovo, out int male_pismena, out int cifry, out int jine_znaky)
         {
+            int velke_pismena = 0;
             male_pismena = 0;
             cifry = 0;
             jine_znaky = 0;
-            int projelo = 0;
+            bool alfanum = true;
             for (int i = 0; i < slovo.Length; i++)
             {
                 if (slovo[i] >= 'a' && slovo[i] <= 'z')
                 {
                     male_pismena++;
+                    alfanum = true;
+                }
+                else if (slovo[i] >= 'A' && slovo[i] <= 'Z')
+                {
+                    velke_pismena++;
+                    alfanum = true;
                 }
                 else if (slovo[i] >= '0' && slovo[i] <= '9')
                 {
                     cifry++;
+                    alfanum = true;
                 }
                 else if (slovo[i] != ' ')
                 {
+                    alfanum = false;
                     jine_znaky++;
                 }
-                projelo = 1;
             }
-            if (projelo != 0 && jine_znaky == 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return alfanum;
         }
         /// <summary>
         /// vypise string[] do textboxu

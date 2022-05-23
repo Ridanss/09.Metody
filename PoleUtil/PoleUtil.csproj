@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>D:\PRG\09.Metody\PoleUtil\PoleUtil.xml</DocumentationFile>
+    <DocumentationFile>G:\Pavlon\PRG\C#\09.Metody\09.Metody\PoleUtil\PoleUtil.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

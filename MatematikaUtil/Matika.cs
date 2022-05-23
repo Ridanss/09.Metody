@@ -30,7 +30,7 @@ namespace MatematikaUtil
         static public bool Prvocislo(int prvek)
         {
             if (prvek == 1 || prvek > 2 && prvek % 2 == 0) return false;
-            else for (int del = 3; del <= Math.Sqrt(prvek); del += 2)
+            for (int del = 3; del <= Math.Sqrt(prvek); del += 2)
                 {
                     if (prvek % del == 0) return false;
                 }

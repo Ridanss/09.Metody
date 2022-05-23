@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MatematikaUtil</name>
+    </assembly>
+    <members>
+        <member name="T:MatematikaUtil.Matika">
+            <summary>
+            Metody pro matematicke operace
+            </summary>
+        </member>
+        <member name="M:MatematikaUtil.Matika.Mocnina(System.Int32,System.Int32)">
+            <summary>
+            vrátí xtou mocninu prvku
+            </summary>
+            <param name="prvek">umocnovane cislo</param>
+            <param name="mocnina">mocnina</param>
+            <returns></returns>
+        </member>
+        <member name="M:MatematikaUtil.Matika.Prvocislo(System.Int32)">
+            <summary>
+            zjisti zda je prvek prvocislo
+            </summary>
+            <param name="prvek">kontrolovany prvek</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
