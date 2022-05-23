@@ -38,7 +38,7 @@
             <param name="jine_znaky">pocet jinych znaku</param>
             <returns></returns>
         </member>
-        <member name="M:RetezecUtil.Retezec.Zobraz(System.String[],System.Windows.Forms.TextBox)">
+        <member name="M:RetezecUtil.Retezec.Zobraz(System.String[],System.Windows.Forms.ListBox)">
             <summary>
             vypise string[] do textboxu
             </summary>

@@ -107,12 +107,11 @@ namespace RetezecUtil
         /// </summary>
         /// <param name="chain">vstup</param>
         /// <param name="ctrl">vystup</param>
-        static public void Zobraz(string[] chain, TextBox ctrl)
+        static public void Zobraz(string[] chain, ListBox ctrl)
         {
             foreach(string value in chain)
             {
-                ctrl.Text += value;
-                ctrl.Text += Environment.NewLine;
+                ctrl.Items.Add(value);
             }
         }
         /// <summary>
