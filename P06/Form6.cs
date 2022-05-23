@@ -24,7 +24,7 @@ namespace P06
             if (textBox1.Text != string.Empty)
             {
                 label1.Text = "Výsledky:\n";
-                bool slovo = Retezec.ObsahujeSlovo(out string nejdelsi, out string nejkratsi, out string[] slova, textBox1.Text);
+                bool slovo = Retezec.ObsahujeSlovo(out string nejdelsi, out string nejkratsi, out string slova, textBox1.Text);
                 label1.Text += string.Format("{0} slovo\nNejdelší slovo je {1}\nNejkratší slovo je {2}\n", slovo ? "Obsahuje" : "Neobsahuje", nejdelsi, nejkratsi);
                 Retezec.Zobraz(slova, listBox1);
             }

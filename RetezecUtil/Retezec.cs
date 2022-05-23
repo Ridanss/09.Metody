@@ -39,27 +39,28 @@ namespace RetezecUtil
 /// <param name="slova"></param>
 /// <param name="chain"></param>
 /// <returns></returns>
-        static public bool ObsahujeSlovo(out string nejdelsi, out string nejkratsi, out string[] slova, string chain)
+        static public bool ObsahujeSlovo(out string nejdelsi, out string nejkratsi, out string slova, string chain)
         {
             chain = chain.Trim();
             while (chain.Contains("  "))
             {
                 chain = chain.Replace("  ", " ");
             }
-            slova = chain.Split(' ');
+            string[] newchain = chain.Split(' ');
 
             nejdelsi = string.Empty;
-            nejkratsi = slova[0];
+            nejkratsi = newchain[0];
             bool obsahuje = false;
-            for (int i = 0; i < slova.Length; i++)
+            for (int i = 0; i < newchain.Length; i++)
             {
-                if (slova[i] != string.Empty)
+                if (newchain[i] != string.Empty)
                 {
                     obsahuje = true;
-                    if (slova[i].Length > nejdelsi.Length) nejdelsi = slova[i];
-                    else if (slova[i].Length < nejkratsi.Length) nejkratsi = slova[i];
+                    if (newchain[i].Length > nejdelsi.Length) nejdelsi = newchain[i];
+                    else if (newchain[i].Length < nejkratsi.Length) nejkratsi = newchain[i];
                 }
             }
+            slova = string.Join(" ", newchain);
             return obsahuje;
         }
         /// <summary>
@@ -78,7 +79,7 @@ namespace RetezecUtil
             jine_znaky = 0;
             bool alfanum = true;
             for (int i = 0; i < slovo.Length; i++)
-            {
+            {   
                 if (slovo[i] >= 'a' && slovo[i] <= 'z')
                 {
                     male_pismena++;
@@ -107,9 +108,10 @@ namespace RetezecUtil
         /// </summary>
         /// <param name="chain">vstup</param>
         /// <param name="ctrl">vystup</param>
-        static public void Zobraz(string[] chain, ListBox ctrl)
+        static public void Zobraz(string chain, ListBox ctrl)
         {
-            foreach(string value in chain)
+            string[] newchain = chain.Split(' ');
+            foreach (string value in newchain)
             {
                 ctrl.Items.Add(value);
             }
